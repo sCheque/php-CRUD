@@ -25,5 +25,9 @@ docker compose exec mysql mysql -u user -p123 CRUD_db
 Создание таблицы постов для нашего CRUD
 
 ```
-CREATE TABLE posts;
+CREATE TABLE posts (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(30) NOT NULL,
+    content TEXT NOT NULL
+)
 ```
